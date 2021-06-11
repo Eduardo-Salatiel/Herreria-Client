@@ -1,0 +1,21 @@
+@import './scss/index.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f2f2f2;
+  min-height: 2000px;
+}
+
+main {
+  padding-top: 150px;
+}
+

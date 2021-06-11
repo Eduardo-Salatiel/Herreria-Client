@@ -1,0 +1,87 @@
+@import "./../../../scss/index.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  transition: 1s;
+  z-index: 999;
+
+  .logo {
+    color: #fff;
+    position: absolute;
+    font-size: 15vw;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    z-index: 1;
+  }
+
+  &.sticky {
+    height: 80px;
+    padding: 0 50px;
+
+    .logo {
+      left: 80px;
+      font-size: 3rem;
+      transform: translate(0, -50%);
+    }
+
+    .header-banner {
+      opacity: 0.6;
+    }
+
+    .header-menu {
+      opacity: 1;
+      transform: translateX(0);
+      transition-delay: 0.7s;
+    }
+  }
+}
+
+//TABLET Y MOBILE
+@media (max-width: 990px) {
+    .header {
+      .toggle {
+        background-color: #fff;
+        background-image: url('../../../assets/img/menu.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        opacity: 0;
+        transition: opacity 0.4s;
+        transition-delay: 0.1s;
+        width: 50px;
+        height: 50px;
+        z-index: 20;
+      }
+
+      &.sticky {
+        padding: 40px;
+  
+        .logo {
+          left: 20px;
+          font-size: 2rem;
+        }
+
+        .toggle {
+          opacity: 1;
+          transition-delay: 0.9s;
+
+          &.active {
+              background-image: url('../../../assets/img/cancel.svg');
+          }
+        }
+      }
+    }
+  }

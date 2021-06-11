@@ -1,0 +1,24 @@
+@import './../../scss/index.scss';
+
+.strengths {
+    margin-top: 50px;
+    width: 100%;
+    background-color: $bg-dark;
+
+    .title {
+        color: $font-white;
+        font-size: 2rem;
+        margin: 0;
+        padding: 35px 0 0 0;
+        text-align: center;
+    }
+
+    .strengths-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+        min-height: 500px;
+    }
+}

@@ -1,0 +1,20 @@
+@import './../../../scss/index.scss';
+
+.contact-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+    i {
+        font-size: 24px;
+        color: $font-white;
+        margin-right: 10px;
+    }
+
+    a, span {
+        text-decoration: none;
+        font-size: 18px;
+        color: $font-white;
+    }
+}

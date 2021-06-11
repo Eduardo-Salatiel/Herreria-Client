@@ -1,0 +1,61 @@
+@import "./../../../../scss/index.scss";
+
+.header-menu {
+  display: flex;
+  z-index: 1;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 0.3s;
+
+  .__list {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    transition: 0.25s;
+
+    .__item a {
+      color: $font-white;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px 15px;
+      text-decoration: none;
+
+      &:hover {
+        color: $font-violet;
+      }
+    }
+  }
+}
+
+//TABLET Y MOBILE
+@media (max-width: 990px) {
+  .header-menu {
+    position: fixed;
+    top: 80px;
+    left: 110vw;
+    height: calc(100vh - 80px);
+    transition: .4s ease;
+    transition-delay: 0.001s;
+
+    .__list {
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+
+      .__item {
+        font-size: 3.5rem;
+
+        a {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &.active {
+      left: 0;
+    }
+  }
+}

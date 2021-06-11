@@ -1,0 +1,149 @@
+@import "./../../../scss/index.scss";
+
+.presentation-galery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .__item-1,
+  .__item-2,
+  .__item-3 {
+    box-shadow: 5px 8px 20px 2px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 55%;
+    height: 50%;
+    transition: 0.4s ease;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -12px;
+      bottom: -12px;
+      left: -15px;
+      right: -15px;
+      border: 6px solid #80421d;
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      box-shadow: 7px 15px 25px 5px rgba(0, 0, 0, 0.3);
+      width: 65%;
+      height: 60%;
+      z-index: 10;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  .__item-1 {
+    top: 5%;
+    left: 5%;
+  }
+
+  .__item-2 {
+    right: 5%;
+    top: 20%;
+  }
+
+  .__item-3 {
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-65%);
+  }
+}
+
+//---tablet---
+.presentation-galery {
+  @include tablet {
+    width: 55%;
+
+    .__item-1,
+    .__item-2,
+    .__item-3 {
+      width: 55%;
+      height: 40%;
+  
+      &:hover {
+        box-shadow: 7px 15px 25px 5px rgba(0, 0, 0, 0.3);
+        width: 65%;
+        height: 45%;
+        z-index: 10;
+      }
+    }
+  
+    .__item-1 {
+      top: 12%;
+      left: 5%;
+    }
+  
+    .__item-2 {
+      top: 25%;
+      right: 5%;
+    }
+  
+    .__item-3 {
+      bottom: 15%;
+      left: 50%;
+      transform: translate(-65%);
+    }
+  }
+}
+
+//----DESKTOP----
+.presentation-galery {
+  @include desktop {
+    .__item-1,
+    .__item-2,
+    .__item-3 {
+      width: 50%;
+      height: 45%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -12px;
+        bottom: -12px;
+        left: -15px;
+        right: -15px;
+        border: 6px solid #80421d;
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      &:hover {
+        width: 55%;
+        height: 50%;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .__item-1 {
+      top: 20%;
+      left: 5%;
+    }
+
+    .__item-2 {
+      right: 10%;
+      top: 36%;
+    }
+
+    .__item-3 {
+      left: 50%;
+      bottom: 4%;
+      transform: translate(-65%);
+    }
+  }
+}

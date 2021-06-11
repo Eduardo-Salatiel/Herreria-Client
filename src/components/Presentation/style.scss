@@ -1,0 +1,49 @@
+@import "./../../scss/index.scss";
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+
+  .presentation-information-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+  }
+
+  .presentation-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+//----DESKTOP----
+.presentation {
+  @include tablet() {
+    width: 95%;
+
+    h2 {
+      margin: 0;
+    }
+
+    .presentation-information-container {
+      flex-direction: row;
+      width: 100%;
+      height: 380px;
+    }
+
+    .presentation-about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 45%;
+      height: 100%;
+    }
+  }
+}
