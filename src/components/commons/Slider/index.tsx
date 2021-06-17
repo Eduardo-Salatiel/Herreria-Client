@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 //--------------------------------------------------------------------------
 import "./style.scss";
 import { lastWorks } from "../../../interfaces/lastWorks";

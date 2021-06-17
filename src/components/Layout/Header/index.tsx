@@ -5,8 +5,12 @@ import HeaderBanner from "./HeaderBanner";
 import { HeaderMenu } from "./HeaderMenu";
 import "./style.scss";
 
-const Header = () => {
-  const { headerRef } = useStickyHeader();
+interface Props {
+  stickyHeader?: boolean;
+}
+
+const Header = ({ stickyHeader = true }: Props) => {
+  const { headerRef } = useStickyHeader(stickyHeader);
   const [activeMenu, setActiveMenu] = useState(false);
 
   const handleMenuClick = () => {
@@ -14,7 +18,10 @@ const Header = () => {
   };
 
   return (
-    <header className="header" ref={headerRef}>
+    <header
+      className={`${!stickyHeader ? "header-not sticky" : "header"}`}
+      ref={headerRef}
+    >
       <HeaderBanner />
       <h1 className="logo">BRAND.</h1>
       {/* --- toggle es para el menu en mobile */}
@@ -22,7 +29,7 @@ const Header = () => {
         className={`${activeMenu ? "toggle active" : "toggle"}`}
         onClick={handleMenuClick}
       />
-      <HeaderMenu activeMenu={activeMenu}/>
+      <HeaderMenu activeMenu={activeMenu} />
     </header>
   );
 };

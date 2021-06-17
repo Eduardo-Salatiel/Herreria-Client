@@ -2,6 +2,7 @@ import Carousel from "../commons/Carousel";
 import SectionTitle from "../commons/SectionTitle";
 import { carouselData } from "../../data/carouselData";
 import './style.scss';
+import FadeInImage from "../commons/FadeInImage";
 
 const OtherWorks = () => {
   return (
@@ -10,7 +11,7 @@ const OtherWorks = () => {
       <Carousel loading={false} itemWidth={300}>
         {carouselData.map((carousel, index) => (
           <div className="slick" key={index}>
-            <img src={carousel.src} alt="herreria artesanal" />
+            <FadeInImage urlImage={carousel.src} alt="herreria artesanal"/>
           </div>
         ))}
       </Carousel>

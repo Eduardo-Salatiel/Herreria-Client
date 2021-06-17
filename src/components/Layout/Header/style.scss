@@ -1,6 +1,6 @@
 @import "./../../../scss/index.scss";
 
-.header {
+.header, .header-not {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -85,3 +85,5 @@
       }
     }
   }
+
+  

@@ -11,16 +11,16 @@ export const HeaderMenu = ({ activeMenu }: Props) => {
     <nav className={`${activeMenu ? "header-menu active" : "header-menu"}`}>
       <ul className="__list">
         <li className="__item">
-          <Link to="/aqui">Puertas</Link>
+          <Link to="/puertas">Puertas</Link>
         </li>
         <li className="__item">
-          <Link to="/aqui">Zaguanes</Link>
+          <Link to="/zaguanes">Zaguanes</Link>
         </li>
         <li className="__item">
-          <Link to="/aqui">Barandales</Link>
+          <Link to="/barandales">Barandales</Link>
         </li>
         <li className="__item">
-          <Link to="/aqui">Ventanas</Link>
+          <Link to="/ventanas">Ventanas</Link>
         </li>
       </ul>
     </nav>
