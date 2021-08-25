@@ -1,0 +1,70 @@
+@import "./../../../scss/index.scss";
+
+.image-magnifier-modal {
+  padding: 5px;
+  width: 300px;
+  max-height: 435px;
+
+  h2 {
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+}
+
+//---- TABLET ----
+.image-magnifier-modal {
+  @include tablet {
+    padding: 10px;
+    width: 700px;
+    max-height: unset;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .magnifier-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .magnifier-zoom-placeholder {
+        border: 1px dashed #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+          content: "Zoom";
+          font-size: 1.5rem;
+        }
+      }
+
+      .magnifier-zoom {
+        display: none;
+      }
+
+      .magnifier-preview {
+        margin-right: 15px;
+      }
+
+      .magnifier-preview:hover {
+        & + .magnifier-zoom-placeholder {
+          display: none;
+
+          & + .magnifier-zoom {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+//---- DESKTOP -----
+.image-magnifier-modal {
+  @include desktop {
+    width: 750px;
+    height: unset;
+  }
+}

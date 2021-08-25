@@ -12,6 +12,6 @@ export const contactData: Contact[] = [
     },
     {
         icon: "fab fa-whatsapp-square",
-        textContent: "7731276605"
+        textContent: "7731394086"
     }
 ]

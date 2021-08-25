@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useStickyHeader } from "../../../hooks/useStickyHeader";
+import logoSrc from "./../../../assets/img/logos/logo-blanco.png";
 //-------------------------------------------------------------------------
 import HeaderBanner from "./HeaderBanner";
 import { HeaderMenu } from "./HeaderMenu";
@@ -23,13 +24,15 @@ const Header = ({ stickyHeader = true }: Props) => {
       ref={headerRef}
     >
       <HeaderBanner />
-      <h1 className="logo">BRAND.</h1>
+      <div className="logo">
+        <img className="logo-image" src={logoSrc} alt="logo-herreria-SMC" />
+      </div>
       {/* --- toggle es para el menu en mobile */}
       <div
         className={`${activeMenu ? "toggle active" : "toggle"}`}
         onClick={handleMenuClick}
       />
-      <HeaderMenu activeMenu={activeMenu} />
+      <HeaderMenu activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
     </header>
   );
 };

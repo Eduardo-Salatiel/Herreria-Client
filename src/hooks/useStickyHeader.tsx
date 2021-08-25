@@ -7,16 +7,17 @@ export const useStickyHeader = (sticky: boolean) => {
   };
 
   useEffect(() => {
+    window.scrollY > 0 && headerRef.current?.classList.add("sticky");
     sticky
-    ? window.addEventListener("scroll", handleScroll)
-    : headerRef.current?.classList.add('sticky');
+      ? window.addEventListener("scroll", handleScroll)
+      : headerRef.current?.classList.add("sticky");
 
     return () => {
-      window.removeEventListener("scoll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return {
-      headerRef
+    headerRef,
   };
 };

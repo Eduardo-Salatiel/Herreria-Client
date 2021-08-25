@@ -1,55 +1,43 @@
-import carousel1 from './../assets/img/carousel/c1.jpg';
-import carousel2 from './../assets/img/carousel/c2.jpeg';
-import carousel3 from './../assets/img/carousel/c3.jpeg';
-import carousel4 from './../assets/img/carousel/c4.jpeg';
-import carousel5 from './../assets/img/carousel/c5.jpeg';
-import carousel6 from './../assets/img/carousel/c6.jpeg';
-import carousel7 from './../assets/img/carousel/c7.jpeg';
-import carousel8 from './../assets/img/carousel/c8.jpeg';
-import carousel9 from './../assets/img/carousel/c9.jpeg';
-import carousel10 from './../assets/img/carousel/c10.jpeg';
-import carousel11 from './../assets/img/carousel/c11.jpeg';
-import carousel12 from './../assets/img/carousel/c12.jpeg';
-import carousel13 from './../assets/img/carousel/c13.jpeg';
+
 
 export const carouselData = [
-    {
-        src: carousel1
-    },
-    {
-        src: carousel2
-    },
-    {
-        src: carousel3
-    },
-    {
-        src: carousel4
-    },
-    {
-        src: carousel5
-    },
-    {
-        src: carousel6
-    },
-    {
-        src: carousel7
-    },
-    {
-        src: carousel8
-    },
-    {
-        src: carousel9
-    },
-    {
-        src: carousel10
-    },
-    {
-        src: carousel11
-    },
-    {
-        src: carousel12
-    },
-    {
-        src: carousel13
-    },
-]
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/2884674c-8ccf-492d-8a31-d7b90e5d85a0.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/33603f64-2b2e-45fe-88b2-3a3cfafb7266.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/ventanas/1c6d5567-d035-4f77-a6a5-718c5618e0fc.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/37ba7e46-ff8a-4d28-af42-ed0739537957.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/3cdfb31b-a9bb-40f3-86f3-03e8b96a6a76.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/45a59225-ef76-48bc-b504-a1fd053e8241.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/ventanas/47a344d2-0a56-44b4-a461-2c0535c764b0.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/892f8c85-e022-4a73-a89c-21528265883a.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/90c844bd-86c0-46d6-8f03-75c56f907a41.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/9cc9f35e-12cc-49bd-a7dc-ebb50ad0af5d.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/ventanas/c75e3b49-caad-447d-aafb-42a3ecb9b0b0.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/acb31639-98f8-4486-bb52-49945d28c9ed.jpeg",
+  },
+  {
+    src: "https://herreria.s3.us-east-2.amazonaws.com/puertas/b800af1a-ff3c-42a4-b56b-d9aa04e5c25a.jpeg",
+  },
+];

@@ -14,13 +14,17 @@
   .logo {
     color: #fff;
     position: absolute;
-    font-size: 15vw;
+    width: 20vw;
     top: 50%;
     left: 50%;
     margin: 0;
     transform: translate(-50%, -50%);
     transition: 1s;
     z-index: 1;
+
+    .logo-image {
+      width: 100%;
+    }
   }
 
   &.sticky {
@@ -28,8 +32,8 @@
     padding: 0 50px;
 
     .logo {
-      left: 80px;
-      font-size: 3rem;
+      left: 60px;
+      width: 100px;
       transform: translate(0, -50%);
     }
 
@@ -47,7 +51,7 @@
 
 //TABLET Y MOBILE
 @media (max-width: 990px) {
-    .header {
+    .header, .header-not {
       .toggle {
         background-color: #fff;
         background-image: url('../../../assets/img/menu.svg');
@@ -66,12 +70,16 @@
         z-index: 20;
       }
 
+      .logo {
+        width: 55vw;
+      }
+
       &.sticky {
         padding: 40px;
   
         .logo {
-          left: 20px;
-          font-size: 2rem;
+          left: 10px;
+          width: 100px;
         }
 
         .toggle {

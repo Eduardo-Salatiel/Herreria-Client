@@ -12,11 +12,7 @@ interface Props {
 const FadeInImage = ({ urlImage, alt, styles }: Props) => {
   const [opacity, setOpacity] = useState(0);
 
-  const handleLoadedImage = () => {
-    setTimeout(() => {
-      setOpacity(1);
-    }, 4000);
-  };
+  const handleLoadedImage = () => setOpacity(1);
 
   return (
     <Fragment>
