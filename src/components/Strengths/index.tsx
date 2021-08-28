@@ -6,6 +6,7 @@ const Strengths = () => {
   return (
     <section className="strengths">
       <h2 className="title">¿Por qué somos tu mejor opción?</h2>
+      <p className="title-second">Toca la imagen y averígualo</p>
       <div className="strengths-cards-container">
         {strengthsData.map((strength, index) => (
           <ClipPathCard

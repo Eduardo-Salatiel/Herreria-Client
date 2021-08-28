@@ -11,6 +11,9 @@ export const HeaderMenu = ({ activeMenu, setActiveMenu }: Props) => {
   return (
     <nav className={`${activeMenu ? "header-menu active" : "header-menu"}`}>
       <ul className="__list">
+      <li className="__item" onClick={() => setActiveMenu(false)}>
+          <Link to="/">Inicio</Link>
+        </li>
         <li className="__item" onClick={() => setActiveMenu(false)}>
           <Link to="/puertas">Puertas</Link>
         </li>

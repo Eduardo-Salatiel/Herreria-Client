@@ -34,7 +34,7 @@ const ImageMagnifierModal = ({imageUrl,magniferDimensions}: Props) => {
 
   return (
     <div className="image-magnifier-modal">
-      <h2 className="modal-title">title</h2>
+      <h2 className="modal-title">Activa el zoom al tocar</h2>
       {verifyIsMobile ? (
         <GlassMagnifier
           className="glass-magnifier"
