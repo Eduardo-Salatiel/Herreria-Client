@@ -11,7 +11,7 @@ const OtherWorks = () => {
       <Carousel loading={false} itemWidth={300}>
         {carouselData.map((carousel, index) => (
           <div className="slick" key={index}>
-            <FadeInImage urlImage={carousel.src} alt="herreria artesanal"/>
+            <FadeInImage urlImage={carousel.src} alt="herreria artesanal forja-smc"/>
           </div>
         ))}
       </Carousel>
