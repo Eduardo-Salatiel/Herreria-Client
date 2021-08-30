@@ -10,7 +10,7 @@ export const PresentationGalery = () => {
         <img src={'https://herreria.s3.us-east-2.amazonaws.com/zaguanes/e7d60ccf-4dc5-4b80-b1fb-ab99d6982b79.jpeg'} alt="forja smc" />
       </div>
       <div className="__item-3">
-        <img src={'https://herreria.s3.amazonaws.com/barandales/3f998a2a-801c-4947-a1bd-0fc2b9c13773.jpeg'} alt="forja smc" />
+        <img src={'https://herreria.s3.amazonaws.com/zaguanes/2628266e-a2d0-4f0a-b695-a03f9c291311.jpeg'} alt="forja smc" />
       </div>
     </div>
   );

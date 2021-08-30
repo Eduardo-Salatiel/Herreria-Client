@@ -1,4 +1,3 @@
-import { carouselData } from "../../data/carouselData";
 import { useSetRecoilState, useRecoilValue } from "recoil";
 //-------------------------------------------------------------------------
 import FadeInImage from "../commons/FadeInImage";
@@ -25,6 +24,7 @@ const Galery = ({ catalog }: Props) => {
   const { categoryStyles } = useGetCategoryStyles(catalog);
 
   useEffect(() => {
+    setCategoryImages({ galery: []})
     getCategoriesImages(catalog).then((res) =>
       setCategoryImages({ galery: res })
     );

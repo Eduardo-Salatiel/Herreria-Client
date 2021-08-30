@@ -19,7 +19,8 @@ const Catalog = () => {
     <Fragment>
       <Header stickyHeader={false} />
       <div className="catalog-container">
-        <SectionTitle title={catalog} />
+        <SectionTitle title={`${catalog}`} />
+        <p className="catalog-instruction">Para ver a detalle, seleccione una imagen</p>
         <Galery catalog={catalog} />
       </div>
       <Footer />
