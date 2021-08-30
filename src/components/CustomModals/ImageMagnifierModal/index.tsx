@@ -39,7 +39,7 @@ const ImageMagnifierModal = ({imageUrl,magniferDimensions}: Props) => {
         <GlassMagnifier
           className="glass-magnifier"
           imageSrc={imageUrl}
-          magnifierSize={180}
+          magnifierSize={200}
           magnifierBorderSize={8}
         />
       ) : (
